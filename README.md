@@ -18,7 +18,7 @@ Main Functionalities:
 To clone this repository, run the following command:
 
 ```
-git clone "https://github.com/paradise110302/C4gtdiksha"
+git clone https://github.com/paradise110302/C4gtdiksha.git
 ```
 
 ### Dependencies
