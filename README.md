@@ -1,6 +1,6 @@
 ### Auto generate content in local language
 
-Add a short and descriptive project name here.
+
 
 ### Description
 The project is a Node.js application that provides an API for translating text using the Neural Machine Translation (NMT) model. The main purpose of the project is to demonstrate how to integrate with a translation pipeline and perform translations between different languages.
