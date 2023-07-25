@@ -68,7 +68,7 @@ POST http://localhost:3000/textComputeNMT
 ### Note
 
 Please ensure that the necessary configurations, API keys, and environment variables are set up correctly before using the API.
-
+Check out the designs at : https://www.figma.com/file/f43Silx7EFHUIR7hK20KFV/Untitled?type=design&node-id=0%3A1&mode=design&t=yyFkfU6cmKTbzV8r-1
 ### License
 
 
