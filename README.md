@@ -34,6 +34,8 @@ npm install @prisma/client express node express-session axios cors
 To run the project, execute the following command:
 
 ```
+cd server
+npm install @prisma/client express node express-session axios cors
 npx nodemon index.js
 ```
 
