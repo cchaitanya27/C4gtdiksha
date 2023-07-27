@@ -7,7 +7,6 @@ const textComputeNMT = async (req, res) => {
     const source = req.body.source;
     const configData = await config.config(req, res);
     const callbackUrl = configData.callbackUrl;
-    console.log(configData, callbackUrl);
     const inferenceApiKey = configData.inferenceApiKey;
     const sourceLanguage = configData.sourceLanguage;
     const targetLanguage = configData.targetLanguage;
@@ -35,8 +34,6 @@ const textComputeNMT = async (req, res) => {
       }
     };
 
-    console.log("-----------------------------------", requestBody);
-
     const responses = [];
     const headers = {
       [configData.inferenceApiKeyName]: inferenceApiKey,
@@ -48,10 +45,10 @@ const textComputeNMT = async (req, res) => {
     // Make the API call
     const response = await axios.post(callbackUrl, requestBody, { headers });
     responses.push(response);
-    res.status(200).send({ message: "Translation successful", data: responses });
+    const data = response.data.pipelineResponse[0].output;
+    res.status(200).send({ message: "Translation successful", data: data });
   } catch (error) {
     console.error(error);
-    console.error(error.response.data);
     res.status(400).send({ message: "Error processing the translation request", error: error });
   }
 };

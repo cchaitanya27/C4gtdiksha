@@ -4,7 +4,6 @@ const getTextData = require('./text');
 const config = async (req, res) => {
     try {
         const tasks = await getTextData(req, res);
-        console.log("------------------------",tasks);
         
         const callbackUrl = tasks.pipelineInferenceAPIEndPoint.callbackUrl;
         const inferenceApiKeyName = tasks.pipelineInferenceAPIEndPoint.inferenceApiKey.name;

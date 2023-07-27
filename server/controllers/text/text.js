@@ -8,7 +8,6 @@ const getTextData = async (req, res) => {
   try {
     const ulca_base_url = 'https://meity-auth.ulcacontrib.org';
     const model_pipeline_endpoint = '/ulca/apis/v0/model/getModelsPipeline';
-
     const headers = {
       'userID': process.env.userID,
       'ulcaApiKey': process.env.ulcaApiKey
