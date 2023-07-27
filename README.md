@@ -38,6 +38,8 @@ cd server
 npm install @prisma/client express node express-session axios cors
 npx nodemon index.js
 ```
+
+
 - For Frontend
 
 ```
@@ -47,6 +49,15 @@ npx nodemon index.js
 ### Usage
 
 Use any preferred client such as Postman or ThunderClient to interact with the API.
+
+add the request for example:
+```
+{
+  "sourceLanguage": "en",
+  "targetLanguage": "hi",
+  "source": "I missed you"
+}
+```
 
 #### Welcome Endpoint
 
