@@ -32,13 +32,18 @@ npm install @prisma/client express node express-session axios cors
 ### How to Run
 
 To run the project, execute the following command:
-
+- For Backend
 ```
 cd server
 npm install @prisma/client express node express-session axios cors
 npx nodemon index.js
 ```
+- For Frontend
 
+```
+cd public
+npx nodemon index.js
+```
 ### Usage
 
 Use any preferred client such as Postman or ThunderClient to interact with the API.

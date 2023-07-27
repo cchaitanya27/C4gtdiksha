@@ -1,0 +1,121 @@
+.container-main {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-main .div {
+    background-color: #ffffff;
+    border: 1px none;
+    height: 932px;
+    position: relative;
+    width: 430px;
+}
+
+.container-main .multiple-letter {
+    height: 264px;
+    left: 83px;
+    position: absolute;
+    top: 122px;
+    width: 265px;
+    border-radius: 50%;
+}
+
+.container-main .text-wrapper {
+    color: #000000;
+    font-family: "Ubuntu-Bold", Helvetica;
+    font-size: 64px;
+    font-weight: 700;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 397px;
+    white-space: nowrap;
+}
+
+.container-main .text-wrapper-2 {
+    color: #000000;
+    font-family: "Ubuntu-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 218px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 439px;
+    white-space: nowrap;
+    width: 124px;
+}
+
+.container-main .text-wrapper-3 {
+    color: #000000;
+    font-family: "Tiro Devanagari Hindi-Italic", Helvetica;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+    left: 218px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 404px;
+    white-space: nowrap;
+    width: 45px;
+}
+
+.container-main .p {
+    color: #552b18;
+    font-family: "Ubuntu-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 99px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 476px;
+    white-space: nowrap;
+}
+
+.container-main .overlap-group {
+    background-color: #fec3b9;
+    border: 1px solid;
+    border-color: #552b18;
+    border-radius: 5px;
+    height: 41px;
+    left: 82px;
+    position: absolute;
+    top: 537px;
+    width: 272px;
+}
+
+.container-main .text-wrapper-4 {
+    color: #552b18;
+    font-family: "Ubuntu-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 83px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+}
+
+.container-main .vector {
+    height: 16px;
+    left: 196px;
+    position: absolute;
+    top: 12px;
+    width: 27px;
+}
+
+.container-main .element {
+    height: 295px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 637px;
+    width: 430px;
+}
