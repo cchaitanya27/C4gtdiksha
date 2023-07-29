@@ -30,6 +30,7 @@ const getTextData = async (req, res) => {
   };
     const response = await axios.post(ulca_base_url + model_pipeline_endpoint, reqBody, { headers });
     const tasks = response.data;
+    console.log(tasks);
     if (response.status === 200) {
       return tasks; // Return the tasks data
     } else {
