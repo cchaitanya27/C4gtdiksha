@@ -18,8 +18,8 @@ const getTextData = async (req, res) => {
               "taskType": "translation",
               "config": {
                   "language": {
-                      "sourceLanguage": req.body.sourceLanguage,
-                      "targetLanguage": req.body.targetLanguage
+                      "sourceLanguage": req.body.sourceLanguage || "en",
+                      "targetLanguage": req.body.targetLanguage || "hi"
                   }
               }
           }
