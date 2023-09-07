@@ -4,25 +4,23 @@ import UploadFile from "./UploadFile";
 import TextSelection from "./TextSelection";
 import NavigationBar from "./NavigationBar";
 import CharacterCountAndCopy from "./CharacterCountAndCopy";
-import LanguageInput from "./LanguageInput"; // Import the LanguageInput component
+import LanguageInput from "./LanguageInput"; 
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
 export const IphoneProMax = () => {
-  const [translatedText, setTranslatedText] = useState(""); // State to store the translated text
+  const [translatedText, setTranslatedText] = useState("");
 
-  // Callback to update the translated text
   const handleTranslate = (result) => {
     setTranslatedText(result);
   };
 
   return (
-    <div className="iphone-pro-max">
-      <NameAndGreeting />
-      <div className="group">
-        {/* ... other components ... */}
-      </div>
-      <LanguageInput onTranslate={handleTranslate} /> {/* Use the LanguageInput component */}
+    <div className="iphone-pro-max container-fluid">
+      {/* ... other components ... */}
+      <LanguageInput onTranslate={handleTranslate} />
+      
       {translatedText && (
-        <div className="translated-result">
+        <div className="translated-result container-fluid">
           <p>Translated Text:</p>
           <p>{translatedText}</p>
         </div>
